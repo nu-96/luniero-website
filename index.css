@@ -289,73 +289,49 @@ body {
     background: var(--bg-white);
 }
 
-.benefit-list {
-    margin-top: 2rem;
+.benefit-card {
+    background: var(--bg-light);
+    border-radius: 16px;
+    padding: 2rem;
+    height: 100%;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
 }
 
-.benefit-item {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.benefit-icon {
-    flex-shrink: 0;
-}
-
-.benefit-icon i {
-    font-size: 1.5rem;
-    color: var(--primary);
-}
-
-.benefit-item h4 {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--secondary);
-    margin-bottom: 0.25rem;
-}
-
-.benefit-item p {
-    color: var(--text-medium);
-    font-size: 0.95rem;
-    margin: 0;
-}
-
-.benefits-visual {
+.benefit-card .benefit-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    margin: 0 auto 1.5rem;
 }
 
-.quote-card {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+.benefit-card .benefit-icon i {
+    font-size: 1.5rem;
     color: white;
-    padding: 2.5rem;
-    border-radius: 20px;
-    position: relative;
 }
 
-.quote-card i {
-    font-size: 3rem;
-    opacity: 0.3;
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-}
-
-.quote-card p {
+.benefit-card h4 {
     font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 1;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
 }
 
-.quote-author {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    font-weight: 500;
+.benefit-card p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* Process Section */
@@ -497,6 +473,26 @@ body {
 .footer-copy {
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-contact-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-email {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.footer-email:hover {
+    color: var(--accent);
 }
 
 /* Responsive */

@@ -11,8 +11,8 @@
 
     "seo": {
         "title": "Luniero | AI Automation for Accounting Firms & CPAs",
-        "description": "Luniero helps CPA firms automate bookkeeping, invoice processing, bank reconciliation, and client onboarding. Save 15+ hours per week and focus on advisory services.",
-        "keywords": "CPA automation, accounting firm automation, bookkeeping automation, invoice processing, bank reconciliation software, tax document automation, accounting workflow automation, AI for accountants",
+        "description": "Luniero helps CPA firms identify automation opportunities through workflow audits. Book a free discovery call to see what's possible for your firm.",
+        "keywords": "CPA automation, accounting firm automation, workflow audit, accounting workflow automation, AI for accountants, accounting process improvement",
         "ogImage": "https://luniero.com/og-image.jpg"
     },
 
@@ -20,7 +20,7 @@
         "tag": "AI Automation for CPAs",
         "title": "Spend Less Time on Data Entry.",
         "titleLine2": "More Time Advising Clients.",
-        "subtitle": "We help accounting firms automate repetitive tasks—from invoice processing to client onboarding—so your team can focus on billable work and growing your practice.",
+        "subtitle": "We help accounting firms identify and automate repetitive tasks so your team can focus on billable work and growing your practice.",
         "ctaButton": "Schedule Your Free Discovery Call",
         "ctaNote": "30-minute call • No obligation • See what's possible"
     },
@@ -64,39 +64,24 @@
         ]
     },
 
-    "services": {
-        "title": "How We Help Your Firm",
-        "subtitle": "Practical automation solutions built for how accounting firms actually work",
+    "approach": {
+        "title": "Our Approach",
+        "subtitle": "Every firm is different. We start with an audit to understand your unique workflows.",
         "items": [
             {
-                "icon": "bi-receipt",
-                "title": "Invoice & Receipt Processing",
-                "description": "Automatically extract data from invoices, receipts, and bills. Information flows directly into your accounting software—no manual entry required."
+                "icon": "bi-search",
+                "title": "Workflow Audit",
+                "description": "We analyze your current processes to identify where your team is spending the most time on repetitive tasks and manual work."
             },
             {
-                "icon": "bi-bank",
-                "title": "Bank Reconciliation",
-                "description": "Match transactions automatically, flag discrepancies for review, and reduce month-end close time significantly."
+                "icon": "bi-lightbulb",
+                "title": "Custom Recommendations",
+                "description": "Based on the audit, we identify automation opportunities specific to your firm—no cookie-cutter solutions."
             },
             {
-                "icon": "bi-person-plus",
-                "title": "Client Onboarding",
-                "description": "Streamline engagement letters, W-9 collection, and document gathering. New clients get set up faster with less back-and-forth."
-            },
-            {
-                "icon": "bi-file-earmark-text",
-                "title": "Tax Document Organization",
-                "description": "Automatically sort and categorize K-1s, 1099s, W-2s, and supporting documents as they come in from clients."
-            },
-            {
-                "icon": "bi-envelope-paper",
-                "title": "Client Communication",
-                "description": "Automated reminders for missing documents, deadline notifications, and status updates—without your staff writing each email."
-            },
-            {
-                "icon": "bi-bar-chart-line",
-                "title": "Financial Reporting",
-                "description": "Generate client-ready financial statements and reports automatically, pulling data from your existing systems."
+                "icon": "bi-gear",
+                "title": "Tailored Implementation",
+                "description": "We build solutions that integrate with your existing software and fit the way your team already works."
             }
         ]
     },
@@ -105,26 +90,26 @@
         "title": "What This Means for Your Firm",
         "items": [
             {
+                "icon": "bi-clock-fill",
                 "title": "Recover Billable Hours",
                 "description": "Stop losing revenue to administrative tasks. Your staff can focus on work that actually generates fees."
             },
             {
+                "icon": "bi-people-fill",
                 "title": "Handle More Clients",
                 "description": "Take on additional engagements without hiring. Scale your practice during busy season."
             },
             {
+                "icon": "bi-shield-check",
                 "title": "Reduce Errors",
                 "description": "Automated data entry means fewer transposition errors, missed entries, and reconciliation headaches."
             },
             {
+                "icon": "bi-star-fill",
                 "title": "Improve Client Service",
                 "description": "Faster turnaround times and proactive communication make clients feel taken care of."
             }
-        ],
-        "testimonial": {
-            "quote": "We used to spend the first week of every month just on reconciliations. Now it's done in a day, and my team actually looks forward to month-end close.",
-            "author": "Managing Partner, Regional CPA Firm"
-        }
+        ]
     },
 
     "process": {
@@ -166,7 +151,7 @@
     },
 
     "navigation": [
-        { "label": "Services", "href": "#services" },
+        { "label": "Our Approach", "href": "#approach" },
         { "label": "Benefits", "href": "#benefits" },
         { "label": "How It Works", "href": "#process" },
         { "label": "Book a Call", "href": "#book-call", "isButton": true }
