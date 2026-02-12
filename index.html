@@ -10,7 +10,7 @@
     <meta name="author" content="Luniero">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://luniero.com/">
-    <meta name="theme-color" content="#0a0a0a">
+    <meta name="theme-color" content="#08080e">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luniero.com/">
@@ -41,14 +41,20 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Scanlines Overlay -->
+    <div class="scanlines"></div>
+
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-inner">
-            <a href="#" class="logo">LUNIERO</a>
+            <a href="#" class="logo-wrap">
+                <div class="logo-hex"></div>
+                <span class="logo">LUNIERO</span>
+            </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -58,31 +64,35 @@
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
                 <a href="#work">Work</a>
-                <a href="#book" class="nav-cta">Book a Call</a>
+                <a href="#book" class="nav-cta">BOOK A CALL</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg-grain"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="hero-kanji">未来創造</div>
+
         <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-label">AI Creative Studio</div>
-                <h1>Your Agency's<br><span class="gradient-text">AI Weapon.</span></h1>
-                <p class="hero-sub">We arm marketing agencies with AI-powered content creation, hands-on workshops, and strategic audits. No fluff. Just results that hit different.</p>
-                <div class="hero-actions">
-                    <a href="#book" class="btn-primary">Book a Call</a>
-                    <a href="#services" class="btn-ghost">See What We Do</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="hero-figure.png" alt="AI Creative Figure">
-                <div class="hero-image-glow"></div>
+            <div class="hero-label">AI Creative Studio</div>
+            <h1 id="heroTitle">Your Agency's<br><span class="gradient-text">AI Weapon.</span></h1>
+            <p class="hero-sub">
+                I arm marketing agencies with AI-powered content creation, hands-on workshops, and strategic audits.
+                <span class="text-gold"> No fluff. Just results that hit different.</span>
+            </p>
+            <div class="hero-actions">
+                <a href="#book" class="btn-primary">
+                    <span>Book a Call</span>
+                </a>
+                <a href="#services" class="btn-ghost">See What I Do</a>
             </div>
         </div>
+
         <div class="scroll-indicator">
-            <span>Scroll</span>
+            <span>SCROLL</span>
             <div class="scroll-line"></div>
         </div>
     </section>
@@ -90,22 +100,30 @@
     <!-- Marquee -->
     <div class="marquee">
         <div class="marquee-track">
-            <span>MEDIA CONTENT</span>
-            <span class="marquee-dot"></span>
-            <span>AI WORKSHOPS</span>
-            <span class="marquee-dot"></span>
-            <span>AI AUDIT</span>
-            <span class="marquee-dot"></span>
-            <span>CREATIVE STRATEGY</span>
-            <span class="marquee-dot"></span>
-            <span>MEDIA CONTENT</span>
-            <span class="marquee-dot"></span>
-            <span>AI WORKSHOPS</span>
-            <span class="marquee-dot"></span>
-            <span>AI AUDIT</span>
-            <span class="marquee-dot"></span>
-            <span>CREATIVE STRATEGY</span>
-            <span class="marquee-dot"></span>
+            <span class="marquee-text">MEDIA CONTENT</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">AI WORKSHOPS</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">AI AUDIT</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">CREATIVE STRATEGY</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">CONTENT SYSTEMS</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">BRAND VOICE AI</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">MEDIA CONTENT</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">AI WORKSHOPS</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">AI AUDIT</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">CREATIVE STRATEGY</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">CONTENT SYSTEMS</span>
+            <span class="marquee-diamond"></span>
+            <span class="marquee-text">BRAND VOICE AI</span>
+            <span class="marquee-diamond"></span>
         </div>
     </div>
 
@@ -113,135 +131,183 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">What We Do</span>
-                <h2>Services Built for<br><span class="gradient-text">Agencies That Move Fast.</span></h2>
+                <span class="section-tag tag-pink">What I Do</span>
+                <h2>Services Built for Agencies<br>That Move Fast<span class="text-pink">.</span></h2>
             </div>
 
-            <div class="services-grid">
-                <!-- Service 1: Media Content Generation -->
-                <div class="service-card">
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div class="service-card" data-color="cyan">
+                    <div class="service-accent"></div>
                     <div class="service-number">01</div>
                     <div class="service-body">
                         <h3>Media Content Generation</h3>
-                        <p>AI-driven visuals, video, and copy that actually stop the scroll. We generate high-volume, high-quality creative assets tailored to your client's brand, so your team can focus on strategy instead of production bottlenecks.</p>
-                        <ul class="service-list">
-                            <li>AI-generated visuals & graphics</li>
-                            <li>Video content at scale</li>
-                            <li>Social media asset packs</li>
-                            <li>Brand-aligned copy generation</li>
-                        </ul>
+                        <p>AI-driven visuals, video, and copy that actually stop the scroll. I generate high-volume, high-quality creative assets tailored to your client's brand, so your team can focus on strategy instead of production bottlenecks.</p>
                     </div>
-                    <div class="service-image">
-                        <img src="hero-figure.png" alt="Media Content Generation">
+                    <div class="service-bullets">
+                        <div class="bullet cyan"><span class="bullet-dot"></span>AI-generated visuals & graphics</div>
+                        <div class="bullet cyan"><span class="bullet-dot"></span>Video content at scale</div>
+                        <div class="bullet cyan"><span class="bullet-dot"></span>Social media asset packs</div>
+                        <div class="bullet cyan"><span class="bullet-dot"></span>Brand-aligned copy generation</div>
                     </div>
                 </div>
 
-                <!-- Service 2: AI Workshops -->
-                <div class="service-card">
+                <!-- Service 2 -->
+                <div class="service-card" data-color="purple">
+                    <div class="service-accent"></div>
                     <div class="service-number">02</div>
                     <div class="service-body">
                         <h3>AI Workshops</h3>
-                        <p>Hands-on training that turns your team into AI power users. Not another boring webinar. We run immersive sessions where your creatives, strategists, and account managers learn to wield AI tools that actually move the needle.</p>
-                        <ul class="service-list">
-                            <li>Prompt engineering for creatives</li>
-                            <li>AI tool stack mastery</li>
-                            <li>Workflow integration training</li>
-                            <li>Custom team sessions</li>
-                        </ul>
+                        <p>Hands-on training that turns your team into AI power users. Not another boring webinar. I run immersive sessions where your creatives, strategists, and account managers learn to wield AI tools that actually move the needle.</p>
                     </div>
-                    <div class="service-image">
-                        <img src="mountain-figure.png" alt="AI Workshops">
+                    <div class="service-bullets">
+                        <div class="bullet purple"><span class="bullet-dot"></span>Prompt engineering for creatives</div>
+                        <div class="bullet purple"><span class="bullet-dot"></span>AI tool stack mastery</div>
+                        <div class="bullet purple"><span class="bullet-dot"></span>Workflow integration training</div>
+                        <div class="bullet purple"><span class="bullet-dot"></span>Custom team sessions</div>
                     </div>
                 </div>
 
-                <!-- Service 3: AI Audit -->
-                <div class="service-card">
+                <!-- Service 3 -->
+                <div class="service-card" data-color="pink">
+                    <div class="service-accent"></div>
                     <div class="service-number">03</div>
                     <div class="service-body">
                         <h3>AI Audit</h3>
-                        <p>A ruthless analysis of where AI can slash costs and multiply output across your agency. We map every workflow, identify the gaps, and hand you a battle plan to integrate AI where it matters most.</p>
-                        <ul class="service-list">
-                            <li>Workflow & process mapping</li>
-                            <li>AI opportunity identification</li>
-                            <li>ROI projections</li>
-                            <li>Implementation roadmap</li>
-                        </ul>
+                        <p>A ruthless analysis of where AI can slash costs and multiply output across your agency. I map every workflow, identify the gaps, and hand you a battle plan to integrate AI where it matters most.</p>
                     </div>
-                    <div class="service-image">
-                        <img src="dark-warrior.png" alt="AI Audit">
+                    <div class="service-bullets">
+                        <div class="bullet pink"><span class="bullet-dot"></span>Workflow & process mapping</div>
+                        <div class="bullet pink"><span class="bullet-dot"></span>AI opportunity identification</div>
+                        <div class="bullet pink"><span class="bullet-dot"></span>ROI projections</div>
+                        <div class="bullet pink"><span class="bullet-dot"></span>Implementation roadmap</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About / Why Section -->
-    <section id="about" class="about">
+    <!-- Stats Section -->
+    <section class="stats">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="dark-warrior.png" alt="Luniero Creative">
-                    <div class="about-image-overlay"></div>
+            <div class="stats-grid">
+                <div class="stats-content">
+                    <span class="section-tag tag-gold">Why Me</span>
+                    <h2>Agencies That Sleep on AI<br>Get Left Behind<span class="text-gold">.</span></h2>
+                    <p>The creative game changed. AI isn't replacing your team — it's the multiplier that lets a 10-person agency punch like a 50-person shop. I've been in the trenches with agencies that need to move fast, produce more, and stay ahead of clients who are already asking about AI.</p>
                 </div>
-                <div class="about-content">
-                    <span class="section-tag">Why Luniero</span>
-                    <h2>Agencies That Sleep on AI<br><span class="gradient-text">Get Left Behind.</span></h2>
-                    <p>The creative game changed. AI isn't replacing your team, it's the multiplier that lets a 10-person agency punch like a 50-person shop. We've been in the trenches with agencies that need to move fast, produce more, and stay ahead of clients who are already asking about AI.</p>
-                    <div class="stats-row">
-                        <div class="stat">
-                            <span class="stat-num">10x</span>
-                            <span class="stat-label">Content Output</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-num">60%</span>
-                            <span class="stat-label">Cost Reduction</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-num">48hr</span>
-                            <span class="stat-label">Turnaround</span>
-                        </div>
+                <div class="stats-numbers">
+                    <div class="stat-box">
+                        <span class="stat-val text-cyan">10×</span>
+                        <span class="stat-label">CONTENT OUTPUT</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val text-purple">60%</span>
+                        <span class="stat-label">COST REDUCTION</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val text-pink">48hr</span>
+                        <span class="stat-label">TURNAROUND</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work / Visual Section -->
+    <!-- Work / Gallery Section -->
     <section id="work" class="work">
+        <div class="orb orb-4"></div>
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">The Aesthetic</span>
-                <h2>AI-Generated.<br><span class="gradient-text">Human-Directed.</span></h2>
+                <span class="section-tag tag-cyan">The Aesthetic</span>
+                <h2>AI-Generated<span class="text-cyan">.</span> Human-Directed<span class="text-cyan">.</span></h2>
             </div>
             <div class="work-grid">
-                <div class="work-item work-large">
-                    <img src="dark-warrior.png" alt="Dark Fantasy Creative">
-                    <div class="work-overlay">
-                        <span>Dark Fantasy Campaign</span>
-                    </div>
+                <div class="work-card">
+                    <img src="u2632616781_Create_a_raphip_hop_inspired_black_dark_fantasy_c_faa362b1-bfce-4a75-a077-ae8b8d4f6e67_3.png" alt="Dark Fantasy Campaign">
+                    <div class="work-border"></div>
+                    <div class="work-glitch-line"></div>
+                    <span class="work-label">Dark Fantasy Campaign</span>
                 </div>
-                <div class="work-item">
-                    <img src="hero-figure.png" alt="Urban Creative">
-                    <div class="work-overlay">
-                        <span>Urban Brand Identity</span>
-                    </div>
+                <div class="work-card">
+                    <img src="hero-figure.png" alt="Urban Brand Identity">
+                    <div class="work-border"></div>
+                    <div class="work-glitch-line"></div>
+                    <span class="work-label">Urban Brand Identity</span>
                 </div>
-                <div class="work-item">
-                    <img src="mountain-figure.png" alt="Surreal Creative">
-                    <div class="work-overlay">
-                        <span>Surreal Concept Art</span>
-                    </div>
+                <div class="work-card">
+                    <img src="u2632616781_A_surreal_cyber_punk_scene_aesthetic_with_a_white_a687eb9c-76db-4abd-b1a7-da6b86dd4dd1_3.png" alt="Surreal Concept Art">
+                    <div class="work-border"></div>
+                    <div class="work-glitch-line"></div>
+                    <span class="work-label">Surreal Concept Art</span>
                 </div>
-                <div class="work-item">
-                    <img src="u2632616781_A_surreal_cyber_punk_scene_aesthetic_with_a_white_a687eb9c-76db-4abd-b1a7-da6b86dd4dd1_3.png" alt="Cyberpunk Creative">
-                    <div class="work-overlay">
-                        <span>Cyberpunk Cityscape</span>
-                    </div>
+                <div class="work-card">
+                    <img src="u2632616781_httpss.mj.runCZvSM602AtA_httpss.mj.runLDar7o8rWwE_3894bbdd-637b-4f85-9168-f6877a88014e_3.png" alt="Cyberpunk Cityscape">
+                    <div class="work-border"></div>
+                    <div class="work-glitch-line"></div>
+                    <span class="work-label">Cyberpunk Cityscape</span>
                 </div>
-                <div class="work-item">
+                <div class="work-card">
                     <img src="u2632616781_Generate_a_surrealdream_has_large_grassfields_a_s_f056a12a-ea73-49d4-8e1c-e595d83c433d_0.png" alt="Surreal Dreamscape">
-                    <div class="work-overlay">
-                        <span>Surreal Dreamscape</span>
+                    <div class="work-border"></div>
+                    <div class="work-glitch-line"></div>
+                    <span class="work-label">Surreal Dreamscape</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="orb orb-5"></div>
+        <div class="container">
+            <div class="about-grid">
+                <!-- Avatar -->
+                <div class="about-avatar">
+                    <div class="about-avatar-border"></div>
+                    <img src="dark-warrior.png" alt="Luniero Creative">
+                    <div class="about-glitch-1"></div>
+                    <div class="about-glitch-2"></div>
+                </div>
+
+                <!-- Bio -->
+                <div class="about-content">
+                    <span class="section-tag tag-gold">About</span>
+                    <h2>Built Different<span class="text-gold">.</span></h2>
+                    <p class="about-text-light">
+                        I help social media agencies
+                        <span class="text-gold">work smarter, not harder</span> by integrating AI into
+                        their content production. I specialize in agencies managing multiple small brand accounts —
+                        where the volume is high but the margins are tight.
+                    </p>
+                    <p class="about-text-dim">
+                        My approach is rooted in real workflows, not hype. I audit your process, train your team on
+                        the tools that actually matter, and build AI-powered systems that let you serve more clients
+                        without burning out your people.
+                    </p>
+
+                    <!-- Tags -->
+                    <div class="about-tags">
+                        <span class="about-tag">HIP HOP HEAD</span>
+                        <span class="about-tag">ANIME LOVER</span>
+                        <span class="about-tag">AFROFUTURIST</span>
+                        <span class="about-tag">CREATIVE TECHNOLOGIST</span>
+                    </div>
+
+                    <!-- Mini stats -->
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-val">50+</span>
+                            <span class="about-stat-label">ACCOUNTS OPTIMIZED</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-val">200+</span>
+                            <span class="about-stat-label">HOURS SAVED / MONTH</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-val">15+</span>
+                            <span class="about-stat-label">AI TOOLS MASTERED</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -250,25 +316,25 @@
 
     <!-- CTA / Book Section -->
     <section id="book" class="book">
-        <div class="book-bg-grain"></div>
+        <div class="orb orb-6"></div>
         <div class="container">
-            <div class="book-inner">
-                <div class="book-content">
-                    <span class="section-tag">Let's Talk</span>
-                    <h2>Ready to Give Your<br>Agency an <span class="gradient-text">Unfair Advantage?</span></h2>
-                    <p>Book a free strategy call. We'll break down exactly how AI can level up your agency's output, cut production costs, and keep you ahead of the curve. No sales pitch. Just real talk.</p>
-                    <a href="https://calendly.com/amari-luniero" target="_blank" class="btn-primary btn-large">
-                        Book Your Free Call
-                    </a>
-                    <div class="book-details">
-                        <span>30 min</span>
-                        <span>No obligation</span>
-                        <span>Actionable insights</span>
-                    </div>
-                </div>
-                <div class="book-visual">
-                    <img src="mountain-figure.png" alt="Book a Call">
-                    <div class="book-visual-glow"></div>
+            <div class="book-content">
+                <span class="section-tag tag-pink">Let's Talk</span>
+                <h2>Ready to Give Your Agency an
+                    <span class="gradient-text">Unfair Advantage?</span>
+                </h2>
+                <p>
+                    Book a free strategy call. I'll break down exactly how AI can level up your agency's output,
+                    cut production costs, and keep you ahead of the curve.
+                    <span class="text-gold"> No sales pitch. Just real talk.</span>
+                </p>
+                <a href="https://calendly.com/amari-luniero" target="_blank" class="btn-primary btn-large">
+                    <span>Book Your Free Call →</span>
+                </a>
+                <div class="book-badges">
+                    <span class="book-badge"><span class="badge-check">✓</span> 30 min</span>
+                    <span class="book-badge"><span class="badge-check">✓</span> No obligation</span>
+                    <span class="book-badge"><span class="badge-check">✓</span> Actionable insights</span>
                 </div>
             </div>
         </div>
@@ -279,21 +345,30 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-left">
-                    <span class="footer-logo">LUNIERO</span>
-                    <p class="footer-tagline">AI Creative Studio for Marketing Agencies</p>
+                    <div class="footer-logo-wrap">
+                        <div class="footer-hex"></div>
+                        <span class="footer-logo">LUNIERO</span>
+                    </div>
+                    <p class="footer-tagline">AI Creative Studio for<br>Marketing Agencies</p>
                 </div>
-                <div class="footer-center">
-                    <a href="mailto:info@luniero.com">info@luniero.com</a>
-                    <a href="mailto:team@luniero.com">team@luniero.com</a>
-                </div>
-                <div class="footer-right">
-                    <a href="#services">Services</a>
-                    <a href="#about">About</a>
-                    <a href="#book">Contact</a>
+                <div class="footer-links-wrap">
+                    <div class="footer-col">
+                        <div class="footer-col-title">LINKS</div>
+                        <a href="#services">Services</a>
+                        <a href="#about">About</a>
+                        <a href="#work">Work</a>
+                        <a href="#book">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">CONNECT</div>
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                        <a href="https://x.com" target="_blank">Twitter / X</a>
+                        <a href="mailto:info@luniero.com">Email</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Luniero. All rights reserved.</p>
+                <p>&copy; 2026 LUNIERO. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -332,6 +407,13 @@
             });
         });
 
+        // Glitch effect on hero title
+        const heroTitle = document.getElementById('heroTitle');
+        setInterval(() => {
+            heroTitle.classList.add('glitch-active');
+            setTimeout(() => heroTitle.classList.remove('glitch-active'), 180);
+        }, 5000);
+
         // Intersection Observer for fade-in animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -341,9 +423,19 @@
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.service-card, .work-item, .about-content, .about-image, .book-content, .book-visual').forEach(el => {
+        document.querySelectorAll('.service-card, .work-card, .about-content, .about-avatar, .book-content, .stats-content, .stats-numbers, .stat-box').forEach(el => {
             el.classList.add('fade-in');
             observer.observe(el);
+        });
+
+        // Service card hover effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('hovered');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('hovered');
+            });
         });
     </script>
 </body>
